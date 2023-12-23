@@ -37,3 +37,34 @@
     transform: rotate(360deg);
   }
 }
+
+
+button{
+  background-color: rgba(128, 229, 141, 0.856);
+  border-radius: 20px;
+  padding: 8px;
+}
+input{
+  height: 25px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body, input{
+  font: 400 20px "Montserrat";
+}
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap:0.5rem;
+}
+li{
+  text-decoration: none;
+  margin-left: -300px;
+}
+.delete{
+  color:red;
+}
+.delete:hover{
+  cursor: pointer;
+}
