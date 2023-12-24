@@ -61,10 +61,14 @@ ul{
 li{
   text-decoration: none;
   margin-left: -300px;
+  text-justify: auto;
 }
 .delete{
   color:red;
 }
 .delete:hover{
   cursor: pointer;
+}
+input:checked + span {
+  text-decoration: line-through;
 }
