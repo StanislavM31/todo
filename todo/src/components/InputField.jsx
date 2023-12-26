@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
 
-export const InputField = () => {
+export const InputField = ({ text, handleInput, handleSubmit }) => {
   return (
-    <div>InputField</div>
-  )
-}
+    <div>
+      <input type="text" onChange={(e) => handleInput(e.target.value)} />
+      <button onClick={handleSubmit}>+Add</button>
+    </div>
+  );
+};

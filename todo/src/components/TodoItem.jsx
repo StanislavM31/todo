@@ -1,6 +1,6 @@
 import React from "react";
 
-export const TodoItem = ({ id, text, completed, removeTodo, toggleTodoComplete  }) => {
+const TodoItem = ({ id, text, completed, removeTodo, toggleTodoComplete }) => {
   return (
     <li>
       <input
@@ -15,3 +15,5 @@ export const TodoItem = ({ id, text, completed, removeTodo, toggleTodoComplete  
     </li>
   );
 };
+
+export default TodoItem;

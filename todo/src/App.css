@@ -60,11 +60,17 @@ ul{
 }
 li{
   text-decoration: none;
-  margin-left: -300px;
-  text-justify: auto;
+  margin-left: -160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+li>*{
+  margin-left: 20px;
 }
 .delete{
   color:red;
+  font-size: 30px;
 }
 .delete:hover{
   cursor: pointer;

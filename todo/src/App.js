@@ -2,7 +2,7 @@
 import { useState } from "react";
 import "./App.css";
 import TodoList from "./components/TodoList";
-
+import { InputField } from "./components/InputField";
 function App() {
   const [todos, setTodos] = useState([]);
   const [text, setText] = useState("");
@@ -37,8 +37,7 @@ function App() {
       <header className="App-header">header for App</header>
       <body>
         <label htmlFor="">
-          <input type="text" onChange={(e) => setText(e.target.value)} />
-          <button onClick={addTodo}>+Add</button>
+          <InputField handleInput={setText} handleSubmit={addTodo} />
         </label>
         <TodoList
           todos={todos}
