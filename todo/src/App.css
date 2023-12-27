@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  width: 1400px;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -48,21 +50,24 @@ input{
   height: 25px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
 body, input{
   font: 400 20px "Montserrat";
 }
 ul{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap:0.5rem;
 }
 li{
   text-decoration: none;
-  margin-left: -160px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 li>*{

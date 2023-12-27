@@ -16,6 +16,7 @@ function App() {
           completed: false,
         },
       ]);
+      setText('');
     }
   };
   const toggleTodoComplete = (todoId) => {
@@ -37,7 +38,7 @@ function App() {
       <header className="App-header">header for App</header>
       <body>
         <label htmlFor="">
-          <InputField handleInput={setText} handleSubmit={addTodo} />
+          <InputField text = {text} handleInput={setText} handleSubmit={addTodo} />
         </label>
         <TodoList
           todos={todos}
