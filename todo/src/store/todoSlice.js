@@ -3,7 +3,7 @@ import {createSlice} from '@reduxjs/toolkit'
 const todoSlice = createSlice({
     name: 'todos',
     initialState:{
-        todos:["1234"]
+        todos:[]
     },
     reducers:{ //набор методов
         addTodo(state, action){
@@ -16,7 +16,9 @@ const todoSlice = createSlice({
                 completed: false,
             })
         },
-        removeTodo(state, action){},
+        removeTodo(state, action){
+            state.todos = state.todos.filter(todo=> todo.id !== action.payload.id)
+        },
         toggleTodoComplete(state, action){}
     },
 })
