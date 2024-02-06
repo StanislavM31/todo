@@ -32,24 +32,8 @@ route.get('/:_id', async (req, res) => {
     }
 })
 
-route.put('/:_id', async (req, res) => {
-    try {
-        const data = await updateTaskById(req.params._id, req.body);
-        buildResponse(res, data, 200)
-    } catch (err) {
-        buildResponse(res, err.message, 404)
-    }
-})
 
-route.delete('/:_id', async (req, res) => {
-    try {
-        const data = await deleteTaskById(req.params._id)
-        buildResponse(res, data, 200)
-    } catch (err) {
-        buildResponse(res, err.message, 404)
-    }
-}
-)
+
 
 module.exports = route
 

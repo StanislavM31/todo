@@ -8,10 +8,7 @@ const cors = require('cors')
 
 const app = express()
 
-app.use(cors({ origin: 'http://localhost:5173', credential: true }))
-app.use(bodyParser.json())
-app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument))
-app.use('/task', route)
+
 
 
 
